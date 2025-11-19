@@ -6,7 +6,13 @@ import logo from '../../../public/logo.svg';
 
 <div class="container mx-auto">
   <header class="flex justify-between mt-10 items-center shrink-0">
-    <Image src={logo} alt="logo" width={131} height={29} />
+    <Image
+      src={logo}
+      alt="logo"
+      width={131}
+      height={29}
+      loading="eager"
+      fetchpriority={"high"} />
     <div class="flex gap-8">
       <a href="#">デザラボとは</a>
       <a href="#">コンセプト</a>
