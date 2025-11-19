@@ -1,10 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import Button from "../starwind/button";
+import logo from '../../../public/logo.svg';
 ---
 
 <div class="container mx-auto">
   <header class="flex justify-between mt-10 items-center shrink-0">
-    <img src="logo.svg" alt="logo" width="130" />
+    <Image src={logo} alt="logo" width={130} height={300} />
     <div class="flex gap-8">
       <a href="#">デザラボとは</a>
       <a href="#">コンセプト</a>
