@@ -1,0 +1,21 @@
+---
+import {Image} from "astro:assets"
+import peopleIllust from '../../assets/people-illust.svg';
+---
+
+<section class="bg-white w-screen relative flex flex-col justify-center text-center">
+  <div class="max-w-6xl mx-auto py-[120px] flex flex-col gap-9">
+    <h2 class="text-2xl"><span class="text-primary text-4xl mx-2">desalabo</span>とは</h2>
+    <p class="max-w-[590px] leading-[220%] text-text-subtle">「でざらぼ」は、デザイナーに向けて企画された、デザインノウハウやアイデアを一箇所で共有できる、新しいデザイナーコミュニティです。<br>
+      誰かのために、または自分のために知見やアイデア共有しましょう!!</p>
+  </div>
+  <Image
+    src={peopleIllust}
+    alt="logo"
+    width={98.96}
+    height={142.46}
+    loading="eager"
+    fetchpriority={"high"}
+    class="absolute -bottom-6 hidden lg:block lg:right-20 xl:right-40"
+  />
+</section>
