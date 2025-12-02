@@ -7,7 +7,53 @@
 }
 
 :root {
-  --font-sans: "Zen Kaku Gothic New", "sans-serif";
+  --font-sans:
+    "Helvetica Neue", Helvetica, Arial, "Zen Kaku Gothic New", sans-serif;
+}
+
+@theme {
+  --color-primary: var(--color-primary-400);
+  --color-primary-50: #cce7e9;
+  --color-primary-100: #a3d4d8;
+  --color-primary-200: #7ac1c7;
+  --color-primary-300: #52aeb6;
+  --color-primary-400: #299ba4;
+  --color-primary-500: #008893;
+  --color-primary-600: #00747d;
+  --color-primary-700: #005f67;
+  --color-primary-800: #004b51;
+  --color-primary-900: #00363b;
+
+  --color-primary-bg: #f5fbfb;
+
+  /* テキストカラー */
+  --color-text-default: #1e2020; /* Gray-800など */
+  --color-text-subtle: #969696; /* Gray-500など */
+  --color-text-inverse: #ffffff; /* 白（ダーク背景用） */
+  /* --color-text-primary: var(--color-primary); */
+
+  --container-8xl: 96rem;
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    --text-gradient-start: var(--color-primary-500);
+    --text-gradient-end: : var(--color-primary-300);
+
+    background-image: linear-gradient(
+      to right,
+      var(--text-gradient-start),
+      var(--text-gradient-end)
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+html {
+  background-color: #f5fbfb;
 }
 
 h1,

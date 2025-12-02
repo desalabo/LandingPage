@@ -71,7 +71,7 @@
   --card-foreground: var(--color-neutral-950);
   --popover: var(--color-white);
   --popover-foreground: var(--color-neutral-950);
-  --primary: #299ba4;
+  --primary: var(--color-blue-700);
   --primary-foreground: var(--color-neutral-50);
   --primary-accent: var(--color-blue-700);
   --secondary: var(--color-fuchsia-700);
