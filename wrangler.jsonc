@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "desalabo-lp", // ダッシュボードに表示される名前
+  "compatibility_date": "2025-12-4", // このファイルを作った日を書く
+  "assets": {
+    "directory": "./dist",
+  },
+}
